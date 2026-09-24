@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>ألورا بيوتي | Allura Beauty</title>
-  <meta name="description" content="ألورا بيوتي - عطور، مكياج، مستحضرات تجميل وعناية بالبشرة">
 
   <style>
     * {
@@ -17,404 +16,324 @@
     body {
       font-family: Arial, Tahoma, sans-serif;
       background: #faf9f6;
-      color: #252a2e;
+      color: #34383b;
       line-height: 1.7;
     }
 
     a {
       text-decoration: none;
-      color: inherit;
     }
 
-    /* ===== TOP WHATSAPP BAR ===== */
-    .top-bar {
-      background: #f1f0eb;
-      padding: 12px 20px;
+    /* ===== WHATSAPP TOP ===== */
+
+    .whatsapp-bar {
+      background: #f2f0ea;
+      padding: 14px 20px;
       text-align: center;
-      border-bottom: 1px solid #e5e2db;
+      border-bottom: 1px solid #e5e0d6;
     }
 
-    .whatsapp-top {
+    .whatsapp-button {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 9px;
       background: #25d366;
       color: white;
-      padding: 10px 22px;
+      padding: 11px 25px;
       border-radius: 30px;
-      font-size: 15px;
       font-weight: bold;
+      font-size: 15px;
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.18);
       transition: 0.25s;
-      box-shadow: 0 5px 15px rgba(37, 211, 102, 0.18);
     }
 
-    .whatsapp-top:hover {
+    .whatsapp-button:hover {
       transform: translateY(-2px);
       background: #20bd5b;
     }
 
-    .whatsapp-icon {
-      font-size: 20px;
-    }
-
     /* ===== HEADER ===== */
+
     header {
       background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid #e9e6df;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      border-bottom: 1px solid #ebe7df;
     }
 
     .nav {
       max-width: 1150px;
       margin: auto;
-      padding: 17px 22px;
+      padding: 20px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
     }
 
     .logo {
-      font-size: 27px;
+      font-size: 28px;
       font-weight: 800;
-      letter-spacing: 1px;
-      color: #27313a;
+      color: #30373b;
+      letter-spacing: .5px;
     }
 
     .logo span {
-      color: #b29a6e;
+      color: #ad9366;
     }
 
     .nav-links {
       display: flex;
-      gap: 25px;
-      color: #60676d;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: #687075;
       font-size: 14px;
     }
 
     .nav-links a:hover {
-      color: #9b8051;
+      color: #ad9366;
     }
 
     /* ===== HERO ===== */
+
     .hero {
       max-width: 1150px;
       margin: auto;
-      padding: 75px 22px 65px;
+      padding: 85px 24px 80px;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 60px;
       align-items: center;
-      gap: 50px;
     }
 
-    .hero-text .small-title {
-      color: #a58c63;
-      font-size: 14px;
+    .small-title {
+      color: #ad9366;
+      font-size: 13px;
       font-weight: bold;
-      letter-spacing: 2px;
-      margin-bottom: 12px;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
     }
 
     .hero h1 {
-      font-size: clamp(38px, 5vw, 62px);
-      line-height: 1.15;
-      color: #242b30;
-      margin-bottom: 20px;
+      font-size: clamp(42px, 6vw, 70px);
+      line-height: 1.12;
+      color: #30373b;
+      margin-bottom: 22px;
     }
 
     .hero h1 span {
-      color: #a58c63;
+      color: #ad9366;
     }
 
     .hero p {
-      color: #697177;
-      max-width: 570px;
+      color: #72797d;
       font-size: 17px;
-      margin-bottom: 30px;
+      max-width: 570px;
     }
 
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+    /* ===== HERO VISUAL ===== */
 
-    .main-btn {
-      background: #27313a;
-      color: white;
-      padding: 13px 25px;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.25s;
-    }
-
-    .main-btn:hover {
-      background: #151c21;
-      transform: translateY(-2px);
-    }
-
-    .hero-whatsapp {
-      background: #25d366;
-      color: white;
-      padding: 13px 25px;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.25s;
-    }
-
-    .hero-whatsapp:hover {
-      background: #20bd5b;
-      transform: translateY(-2px);
-    }
-
-    /* ===== HERO CARD ===== */
-    .hero-card {
-      min-height: 360px;
-      border-radius: 35px;
+    .hero-visual {
+      min-height: 390px;
+      border-radius: 40px;
       background: linear-gradient(145deg, #eee9df, #f8f6f1);
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 20px 50px rgba(40, 45, 50, 0.08);
+      box-shadow: 0 25px 55px rgba(45, 48, 50, .08);
     }
 
-    .hero-card::before {
-      content: "";
-      width: 230px;
-      height: 230px;
-      border-radius: 50%;
-      background: #e1d5c0;
+    .circle-one {
       position: absolute;
-      top: -70px;
-      right: -50px;
-      opacity: 0.65;
-    }
-
-    .hero-card::after {
-      content: "";
-      width: 180px;
-      height: 180px;
+      width: 260px;
+      height: 260px;
       border-radius: 50%;
-      background: #d9e0df;
-      position: absolute;
-      bottom: -70px;
-      left: -40px;
-      opacity: 0.65;
+      background: #e2d6c2;
+      top: -100px;
+      right: -80px;
     }
 
-    .beauty-box {
+    .circle-two {
+      position: absolute;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: #dfe5e3;
+      bottom: -100px;
+      left: -60px;
+    }
+
+    .visual-content {
       position: relative;
       z-index: 2;
       text-align: center;
     }
 
-    .beauty-box .bottle {
-      font-size: 105px;
-      margin-bottom: 5px;
+    .visual-icon {
+      font-size: 90px;
+      margin-bottom: 10px;
     }
 
-    .beauty-box h2 {
-      font-size: 28px;
-      color: #30373c;
+    .visual-content h2 {
+      color: #30373b;
+      font-size: 30px;
     }
 
-    .beauty-box p {
-      color: #85847e;
+    .visual-content p {
+      color: #888780;
+      font-size: 14px;
       margin-top: 5px;
     }
 
-    /* ===== CATEGORIES ===== */
+    /* ===== SECTION ===== */
+
     .section {
       max-width: 1150px;
       margin: auto;
-      padding: 65px 22px;
+      padding: 70px 24px;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 40px;
     }
 
     .section-title span {
-      color: #a58c63;
-      font-size: 13px;
+      color: #ad9366;
+      font-size: 12px;
       font-weight: bold;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
     }
 
     .section-title h2 {
+      color: #30373b;
       font-size: 34px;
-      margin-top: 5px;
-      color: #27313a;
+      margin-top: 6px;
     }
+
+    /* ===== CATEGORIES ===== */
 
     .categories {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      gap: 18px;
     }
 
     .category {
       background: white;
-      border: 1px solid #e9e6df;
-      border-radius: 20px;
-      padding: 28px 15px;
+      border: 1px solid #e9e5dc;
+      border-radius: 22px;
+      padding: 32px 15px;
       text-align: center;
-      transition: 0.25s;
+      transition: .25s;
     }
 
     .category:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(40, 45, 50, 0.08);
+      box-shadow: 0 15px 35px rgba(45,48,50,.08);
     }
 
     .category-icon {
-      font-size: 37px;
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
     .category h3 {
+      color: #3c4246;
       font-size: 18px;
-      color: #343b40;
     }
 
     .category p {
+      color: #92979a;
       font-size: 13px;
-      color: #8a8e91;
       margin-top: 4px;
     }
 
     /* ===== ABOUT ===== */
+
     .about {
       background: #f0eee8;
     }
 
-    .about-inner {
-      max-width: 1150px;
+    .about-content {
+      max-width: 750px;
       margin: auto;
-      padding: 65px 22px;
+      padding: 75px 24px;
       text-align: center;
     }
 
-    .about-inner h2 {
+    .about-content h2 {
+      color: #30373b;
       font-size: 34px;
-      color: #27313a;
       margin-bottom: 15px;
     }
 
-    .about-inner p {
-      max-width: 720px;
-      margin: auto;
-      color: #666d72;
+    .about-content p {
+      color: #6f767a;
       font-size: 16px;
     }
 
-    /* ===== WHATSAPP CTA ===== */
-    .cta {
-      max-width: 1000px;
-      margin: 65px auto;
-      padding: 45px 25px;
-      background: white;
-      border: 1px solid #e6e2da;
-      border-radius: 28px;
-      text-align: center;
-      box-shadow: 0 15px 40px rgba(40,45,50,0.06);
-    }
-
-    .cta h2 {
-      color: #27313a;
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    .cta p {
-      color: #777e83;
-      margin-bottom: 22px;
-    }
-
-    .cta a {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #25d366;
-      color: white;
-      padding: 13px 28px;
-      border-radius: 30px;
-      font-weight: bold;
-    }
-
     /* ===== FOOTER ===== */
+
     footer {
-      background: #27313a;
-      color: #e9e7e2;
+      background: #f7f5ef;
+      border-top: 1px solid #e6e1d8;
       text-align: center;
-      padding: 28px 20px;
+      padding: 30px 20px;
     }
 
     footer strong {
-      color: #d2bd96;
+      color: #ad9366;
+      font-size: 18px;
     }
 
     footer p {
+      color: #8b9093;
       font-size: 13px;
       margin-top: 5px;
-      color: #b9bec1;
     }
 
     /* ===== MOBILE ===== */
+
     @media (max-width: 800px) {
+
+      .nav {
+        justify-content: center;
+      }
+
       .nav-links {
         display: none;
       }
 
       .hero {
         grid-template-columns: 1fr;
-        padding-top: 50px;
-      }
-
-      .hero-text {
         text-align: center;
+        padding-top: 55px;
       }
 
       .hero p {
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
       }
 
-      .hero-buttons {
-        justify-content: center;
+      .hero-visual {
+        min-height: 300px;
       }
 
       .categories {
         grid-template-columns: repeat(2, 1fr);
       }
-
-      .hero-card {
-        min-height: 300px;
-      }
     }
 
     @media (max-width: 480px) {
-      .top-bar {
-        padding: 10px 12px;
-      }
 
-      .whatsapp-top {
+      .whatsapp-button {
         width: 100%;
-        font-size: 14px;
-      }
-
-      .logo {
-        font-size: 23px;
+        justify-content: center;
       }
 
       .hero h1 {
-        font-size: 39px;
+        font-size: 43px;
       }
 
       .hero p {
@@ -422,16 +341,15 @@
       }
 
       .categories {
-        grid-template-columns: 1fr 1fr;
         gap: 10px;
       }
 
       .category {
-        padding: 22px 8px;
+        padding: 25px 8px;
       }
 
       .section-title h2,
-      .about-inner h2 {
+      .about-content h2 {
         font-size: 28px;
       }
     }
@@ -440,150 +358,133 @@
 
 <body>
 
-  <!-- WHATSAPP FIRST -->
-  <div class="top-bar">
+  <!-- واتساب: أول شيء في الصفحة -->
+  <div class="whatsapp-bar">
     <a
-      class="whatsapp-top"
+      class="whatsapp-button"
       href="https://wa.me/972505900759?text=مرحباً%20ألورا%20بيوتي،%20أرغب%20بالاستفسار%20عن%20المنتجات"
       target="_blank"
     >
-      <span class="whatsapp-icon">💬</span>
-      مراسلة ألورا بيوتي على واتساب
+      💬 مراسلة ألورا بيوتي على واتساب
     </a>
   </div>
 
   <!-- HEADER -->
   <header>
     <nav class="nav">
-      <div class="logo">ألورا <span>بيوتي</span></div>
+
+      <div class="logo">
+        ألورا <span>بيوتي</span>
+      </div>
 
       <div class="nav-links">
         <a href="#categories">الأقسام</a>
         <a href="#about">عن ألورا</a>
-        <a href="#contact">تواصل معنا</a>
       </div>
+
     </nav>
   </header>
 
   <!-- HERO -->
-  <main>
-    <section class="hero">
+  <section class="hero">
 
-      <div class="hero-text">
-        <div class="small-title">ALLURA BEAUTY</div>
+    <div>
+      <div class="small-title">ALLURA BEAUTY</div>
 
-        <h1>
-          جمالك<br>
-          <span>بلمسة ألورا</span>
-        </h1>
-
-        <p>
-          اكتشفي عالمًا من العطور، المكياج، مستحضرات التجميل
-          والعناية بالبشرة المختارة بعناية لتناسب ذوقك.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#categories" class="main-btn">اكتشفي الأقسام</a>
-
-          <a
-            href="https://wa.me/972505900759?text=مرحباً%20ألورا%20بيوتي"
-            target="_blank"
-            class="hero-whatsapp"
-          >
-            💬 اطلب عبر واتساب
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="beauty-box">
-          <div class="bottle">✨</div>
-          <h2>Allura Beauty</h2>
-          <p>Beauty • Fragrance • Care</p>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- CATEGORIES -->
-    <section class="section" id="categories">
-
-      <div class="section-title">
-        <span>OUR COLLECTION</span>
-        <h2>تسوّقي حسب القسم</h2>
-      </div>
-
-      <div class="categories">
-
-        <div class="category">
-          <div class="category-icon">🌸</div>
-          <h3>العطور</h3>
-          <p>روائح تترك أثرًا</p>
-        </div>
-
-        <div class="category">
-          <div class="category-icon">💄</div>
-          <h3>المكياج</h3>
-          <p>إطلالتك بطريقتك</p>
-        </div>
-
-        <div class="category">
-          <div class="category-icon">✨</div>
-          <h3>مستحضرات التجميل</h3>
-          <p>اختيارات تناسبك</p>
-        </div>
-
-        <div class="category">
-          <div class="category-icon">🧴</div>
-          <h3>العناية بالبشرة</h3>
-          <p>اهتمي ببشرتك</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="about-inner">
-
-        <div class="section-title">
-          <span>ABOUT ALLURA</span>
-          <h2>ألورا بيوتي</h2>
-        </div>
-
-        <p>
-          متجر يهتم بالجمال بكل تفاصيله.
-          نختار لك منتجات مميزة في عالم العطور والمكياج
-          والعناية، بتجربة بسيطة وأنيقة تناسب الجميع.
-        </p>
-
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta" id="contact">
-
-      <h2>جاهزة تختاري منتجاتك؟</h2>
+      <h1>
+        جمالك<br>
+        <span>بلمسة ألورا</span>
+      </h1>
 
       <p>
-        تواصلي معنا مباشرة عبر واتساب وساعدك في اختيار ما يناسبك.
+        اكتشفي عالمًا أنيقًا من العطور والمكياج
+        ومستحضرات التجميل والعناية بالبشرة.
+        اختيارات جميلة تناسب ذوقك كل يوم.
+      </p>
+    </div>
+
+    <div class="hero-visual">
+
+      <div class="circle-one"></div>
+      <div class="circle-two"></div>
+
+      <div class="visual-content">
+        <div class="visual-icon">✨</div>
+        <h2>Allura Beauty</h2>
+        <p>Beauty • Fragrance • Care</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="categories">
+
+    <div class="section-title">
+      <span>OUR COLLECTION</span>
+      <h2>أقسام ألورا</h2>
+    </div>
+
+    <div class="categories">
+
+      <div class="category">
+        <div class="category-icon">🌸</div>
+        <h3>العطور</h3>
+        <p>روائح مميزة لكل ذوق</p>
+      </div>
+
+      <div class="category">
+        <div class="category-icon">💄</div>
+        <h3>المكياج</h3>
+        <p>لإطلالة جميلة كل يوم</p>
+      </div>
+
+      <div class="category">
+        <div class="category-icon">✨</div>
+        <h3>مستحضرات التجميل</h3>
+        <p>اختيارات مميزة</p>
+      </div>
+
+      <div class="category">
+        <div class="category-icon">🧴</div>
+        <h3>العناية بالبشرة</h3>
+        <p>اهتمامك يبدأ من هنا</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="about-content">
+
+      <div class="section-title">
+        <span>ABOUT ALLURA</span>
+        <h2>عن ألورا بيوتي</h2>
+      </div>
+
+      <p>
+        ألورا بيوتي مساحة تجمع الجمال والعناية والأناقة
+        في تجربة بسيطة ومرتبة. قريبًا ستجدين هنا
+        مجموعة المنتجات المختارة من ألورا.
       </p>
 
-      <a
-        href="https://wa.me/972505900759?text=مرحباً%20ألورا%20بيوتي،%20أرغب%20بالاستفسار%20عن%20المنتجات"
-        target="_blank"
-      >
-        💬 مراسلة عبر واتساب
-      </a>
+    </div>
 
-    </section>
-
-  </main>
+  </section>
 
   <!-- FOOTER -->
   <footer>
+
     <strong>ألورا بيوتي | Allura Beauty</strong>
-    <p>جمالك يبدأ من اختيارك ✨</p>
+
+    <p>
+      جمالك يبدأ من اختيارك ✨
+    </p>
+
   </footer>
 
 </body>
