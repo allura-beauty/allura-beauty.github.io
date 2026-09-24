@@ -43,7 +43,7 @@
 
     .hero {
       text-align: center;
-      padding: 70px 20px 45px;
+      padding: 70px 20px 30px;
       max-width: 850px;
       margin: auto;
     }
@@ -76,7 +76,7 @@
       margin: auto;
     }
 
-    /* زر الواتساب بالمكان الجديد */
+    /* زر الواتساب */
     .whatsapp-area {
       text-align: center;
       margin: 5px auto 45px;
@@ -99,6 +99,7 @@
       transform: translateY(-2px);
     }
 
+    /* البطاقات */
     .features {
       max-width: 1100px;
       margin: 0 auto;
@@ -139,6 +140,7 @@
       font-size: 15px;
     }
 
+    /* نموذج الطلب */
     .order-section {
       max-width: 700px;
       margin: 0 auto;
@@ -155,8 +157,15 @@
 
     .order-box h2 {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 8px;
       font-size: 28px;
+    }
+
+    .order-description {
+      text-align: center;
+      color: #888;
+      margin-bottom: 25px;
+      font-size: 14px;
     }
 
     .field {
@@ -181,6 +190,11 @@
       outline: none;
     }
 
+    .field input:focus,
+    .field textarea:focus {
+      border-color: #b59a68;
+    }
+
     .field textarea {
       min-height: 110px;
       resize: vertical;
@@ -198,6 +212,11 @@
       cursor: pointer;
     }
 
+    .submit-btn:hover {
+      background: #18ad56;
+    }
+
+    /* التواصل */
     .social {
       text-align: center;
       padding: 20px 20px 50px;
@@ -252,6 +271,10 @@
         width: 100%;
         font-size: 17px;
       }
+
+      .order-box {
+        padding: 28px 18px;
+      }
     }
   </style>
 </head>
@@ -264,6 +287,7 @@
       ألورا <span>بيوتي</span>
     </div>
   </header>
+
 
   <!-- الترحيب -->
   <section class="hero">
@@ -282,7 +306,8 @@
 
   </section>
 
-  <!-- الواتساب بالمكان الذي حددتيه -->
+
+  <!-- الواتساب -->
   <div class="whatsapp-area">
 
     <a
@@ -295,34 +320,44 @@
 
   </div>
 
+
   <!-- المميزات -->
   <section class="features">
 
     <div class="card">
       <div class="icon">⚡</div>
+
       <h3>تواصل سريع</h3>
+
       <p>
         وصلي مباشرة إلى ألورا بيوتي.
       </p>
     </div>
 
+
     <div class="card">
       <div class="icon">💬</div>
+
       <h3>إجابة مباشرة</h3>
+
       <p>
         استفسري عن أي شيء بكل سهولة.
       </p>
     </div>
 
+
     <div class="card">
       <div class="icon">✨</div>
+
       <h3>تجربة بسيطة</h3>
+
       <p>
         تواصلي واطلبي بطريقة سهلة ومريحة.
       </p>
     </div>
 
   </section>
+
 
   <!-- نموذج الطلب -->
   <section class="order-section">
@@ -331,37 +366,73 @@
 
       <h2>اطلبي الآن</h2>
 
+      <p class="order-description">
+        أدخلي بياناتك وسنتواصل معك لتأكيد الطلب
+      </p>
+
+
       <form id="orderForm">
 
+        <!-- الاسم -->
         <div class="field">
-          <label>الاسم</label>
+
+          <label>الاسم الكامل</label>
+
           <input
             type="text"
             id="name"
-            placeholder="اكتبي اسمك"
+            placeholder="اكتبي اسمك الكامل"
             required
           >
+
         </div>
 
+
+        <!-- الهاتف -->
         <div class="field">
+
           <label>رقم الهاتف</label>
+
           <input
             type="tel"
             id="phone"
-            placeholder="رقم الهاتف"
+            placeholder="اكتبي رقم الهاتف"
             required
           >
+
         </div>
 
+
+        <!-- المكان -->
         <div class="field">
+
+          <label>📍 المكان / العنوان</label>
+
+          <input
+            type="text"
+            id="location"
+            placeholder="اكتبي المدينة والعنوان بالتفصيل"
+            required
+          >
+
+        </div>
+
+
+        <!-- تفاصيل الطلب -->
+        <div class="field">
+
           <label>تفاصيل الطلب</label>
+
           <textarea
             id="order"
-            placeholder="اكتبي تفاصيل طلبك هنا"
+            placeholder="اكتبي ماذا تريدين طلبه..."
             required
           ></textarea>
+
         </div>
 
+
+        <!-- زر الإرسال -->
         <button class="submit-btn" type="submit">
           إرسال الطلب عبر واتساب
         </button>
@@ -372,42 +443,87 @@
 
   </section>
 
+
   <!-- التواصل -->
   <section class="social">
 
     <h3>تابعينا وتواصلي معنا</h3>
 
-    <a href="#" target="_blank">Instagram</a>
-    <a href="#" target="_blank">TikTok</a>
-    <a href="https://wa.me/972505900759" target="_blank">WhatsApp</a>
+    <a href="#" target="_blank">
+      Instagram
+    </a>
+
+    <a href="#" target="_blank">
+      TikTok
+    </a>
+
+    <a
+      href="https://wa.me/972505900759"
+      target="_blank"
+    >
+      WhatsApp
+    </a>
 
   </section>
 
+
   <!-- الفوتر -->
   <footer>
+
     © 2026 Allura Beauty — جميع الحقوق محفوظة
+
   </footer>
 
+
+  <!-- إرسال الطلب إلى واتساب -->
   <script>
-    document.getElementById("orderForm").addEventListener("submit", function(e) {
 
-      e.preventDefault();
+    document
+      .getElementById("orderForm")
+      .addEventListener("submit", function(e) {
 
-      const name = document.getElementById("name").value;
-      const phone = document.getElementById("phone").value;
-      const order = document.getElementById("order").value;
+        e.preventDefault();
 
-      const message =
-        "مرحباً ألورا بيوتي 🌸%0A%0A" +
-        "الاسم: " + encodeURIComponent(name) + "%0A" +
-        "رقم الهاتف: " + encodeURIComponent(phone) + "%0A" +
-        "تفاصيل الطلب: " + encodeURIComponent(order);
+        const name =
+          document.getElementById("name").value;
 
-      window.open(
-        "https://wa.me/972505900759?text=" + message,
-        "_blank"
-      );
-    });
+        const phone =
+          document.getElementById("phone").value;
+
+        const location =
+          document.getElementById("location").value;
+
+        const order =
+          document.getElementById("order").value;
+
+
+        const message =
+          "مرحباً ألورا بيوتي 🌸%0A%0A" +
+
+          "👤 الاسم: " +
+          encodeURIComponent(name) +
+          "%0A" +
+
+          "📱 رقم الهاتف: " +
+          encodeURIComponent(phone) +
+          "%0A" +
+
+          "📍 المكان / العنوان: " +
+          encodeURIComponent(location) +
+          "%0A" +
+
+          "🛍️ تفاصيل الطلب: " +
+          encodeURIComponent(order);
+
+
+        window.open(
+          "https://wa.me/972505900759?text=" +
+          message,
+          "_blank"
+        );
+
+      });
+
   </script>
 
 </body>
